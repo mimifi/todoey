@@ -1,21 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:todoey/Widgets/tasks_list.dart';
+import 'package:todoey/screens/add_task_screen.dart';
 
 class TasksScreen extends StatelessWidget {
-  Widget addTaskScreen(context) {
-    return Container(
-      color: Color(0xFF626262),
-      child: Container(
-        decoration: BoxDecoration(
-            color: Colors.white,
-            borderRadius: BorderRadius.only(
-              topRight: Radius.circular(30.0),
-              topLeft: Radius.circular(30.0),
-            )),
-      ),
-    );
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -26,7 +13,7 @@ class TasksScreen extends StatelessWidget {
         onPressed: () {
           showModalBottomSheet(
             context: context,
-            builder: addTaskScreen,
+            builder: (context) => AddTaskScreen(),
           );
           // slide up add task page
         },
