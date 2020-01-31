@@ -7,15 +7,8 @@ class TasksList extends StatelessWidget {
     return ListView(
       children: <Widget>[
         TaskTile(),
-        ListTile(
-          title: Text('This is a new task.'),
-          trailing: Checkbox(
-            onChanged: (bool value) {
-              print((value));
-            },
-            value: false,
-          ),
-        )
+        TaskTile(),
+        TaskTile(),
       ],
     );
   }

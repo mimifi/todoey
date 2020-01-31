@@ -9,7 +9,9 @@ class TasksScreen extends StatelessWidget {
       floatingActionButton: FloatingActionButton(
         backgroundColor: Colors.lightBlueAccent,
         child: Icon(Icons.add),
-        onPressed: () {},
+        onPressed: () {
+          // slide up add task page
+        },
       ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
